@@ -7,17 +7,17 @@
   <meta name="description" content="Choose which Cold Rum races you are available for.">
   <style>
     :root {
-      color-scheme: light;
-      --bg: #e0fbd8;
-      --bg-strong: #d4facb;
-      --text: #071006;
-      --muted: #55715a;
-      --green: #1fac66;
-      --green-dark: #16824d;
-      --track: #a9c6a8;
-      --line: rgba(7, 16, 6, 0.1);
+      color-scheme: dark;
+      --bg: #242628;
+      --bg-strong: #2f3235;
+      --text: #f2f4f3;
+      --muted: #aeb6b1;
+      --accent: #d7dbd8;
+      --accent-dark: #bfc5c1;
+      --track: #565c59;
+      --line: rgba(255, 255, 255, 0.11);
       --white: #ffffff;
-      --shadow: 0 22px 60px rgba(18, 70, 38, 0.18);
+      --shadow: 0 24px 70px rgba(0, 0, 0, 0.42);
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     }
 
@@ -32,8 +32,8 @@
       place-items: center;
       padding: 28px 14px;
       background:
-        radial-gradient(circle at top left, rgba(255, 255, 255, 0.7), transparent 30%),
-        linear-gradient(145deg, #c4e7c9 0%, #eef6eb 45%, #c8d6d1 100%);
+        radial-gradient(circle at top left, rgba(255, 255, 255, 0.12), transparent 28%),
+        linear-gradient(145deg, #111315 0%, #2b2e31 52%, #17191b 100%);
       color: var(--text);
     }
 
@@ -47,6 +47,7 @@
       overflow: hidden;
       border-radius: 18px;
       background: var(--bg);
+      border: 1px solid rgba(255, 255, 255, 0.08);
       box-shadow: var(--shadow);
     }
 
@@ -86,7 +87,7 @@
       height: 20px;
       place-items: center;
       border-radius: 999px;
-      background: #5a745c;
+      background: #686d6a;
       color: var(--white);
       font-size: 15px;
       line-height: 1;
@@ -107,7 +108,7 @@
       padding: 12px;
       border: 1px solid var(--line);
       border-radius: 12px;
-      background: rgba(255, 255, 255, 0.34);
+      background: rgba(255, 255, 255, 0.05);
     }
 
     .person label {
@@ -119,17 +120,17 @@
     .person input {
       min-height: 46px;
       width: 100%;
-      border: 1px solid rgba(7, 16, 6, 0.16);
+      border: 1px solid rgba(255, 255, 255, 0.14);
       border-radius: 10px;
       padding: 0 12px;
-      background: rgba(255, 255, 255, 0.78);
+      background: rgba(255, 255, 255, 0.08);
       color: var(--text);
       outline: none;
     }
 
     .person input:focus {
-      border-color: var(--green);
-      box-shadow: 0 0 0 3px rgba(31, 172, 102, 0.18);
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.13);
     }
 
     .options {
@@ -160,7 +161,7 @@
       height: 46px;
       place-items: center;
       border-radius: 999px;
-      background: rgba(31, 172, 102, 0.2);
+      background: rgba(255, 255, 255, 0.12);
       color: transparent;
       font-size: 32px;
       line-height: 1;
@@ -168,12 +169,12 @@
     }
 
     .option[aria-pressed="true"] .check {
-      background: var(--green);
-      color: var(--white);
+      background: var(--accent);
+      color: #191b1c;
     }
 
     .option:focus-visible .check {
-      outline: 3px solid rgba(31, 172, 102, 0.28);
+      outline: 3px solid rgba(255, 255, 255, 0.22);
       outline-offset: 3px;
     }
 
@@ -215,7 +216,7 @@
       inset: 0 auto 0 0;
       width: 0%;
       border-radius: inherit;
-      background: var(--green);
+      background: var(--accent);
       transition: width 180ms ease;
     }
 
@@ -229,14 +230,14 @@
       min-height: 48px;
       border: 0;
       border-radius: 12px;
-      background: var(--green);
-      color: var(--white);
+      background: var(--accent);
+      color: #191b1c;
       font-weight: 700;
       cursor: pointer;
     }
 
     .save:hover {
-      background: var(--green-dark);
+      background: var(--accent-dark);
     }
 
     .status {
@@ -248,7 +249,7 @@
 
     .results {
       border-top: 1px solid var(--line);
-      background: rgba(255, 255, 255, 0.26);
+      background: rgba(255, 255, 255, 0.04);
       padding: 14px;
     }
 
@@ -267,7 +268,7 @@
       display: grid;
       gap: 3px;
       padding-bottom: 10px;
-      border-bottom: 1px solid rgba(7, 16, 6, 0.08);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     }
 
     .result:last-child {
