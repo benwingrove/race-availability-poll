@@ -284,10 +284,16 @@
     }
 
     .names {
+      display: grid;
+      gap: 4px;
       min-height: 20px;
       color: var(--muted);
       font-size: 0.96rem;
       line-height: 1.35;
+    }
+
+    .name {
+      overflow-wrap: anywhere;
     }
 
     .offline-note {
@@ -443,7 +449,11 @@
             <span>${escapeHtml(race.title)}</span>
             <span>${race.count}</span>
           </div>
-          <div class="names">${race.names.length ? escapeHtml(race.names.join(", ")) : "No one yet"}</div>
+          <div class="names">
+            ${race.names.length
+              ? race.names.map((name) => `<span class="name">${escapeHtml(name)}</span>`).join("")
+              : "No one yet"}
+          </div>
         </article>
       `).join("");
     }
