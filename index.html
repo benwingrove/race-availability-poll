@@ -14,6 +14,8 @@
       --muted: #aeb6b1;
       --accent: #d7dbd8;
       --accent-dark: #bfc5c1;
+      --blue: #1f3f66;
+      --blue-dark: #183451;
       --track: #565c59;
       --line: rgba(255, 255, 255, 0.11);
       --white: #ffffff;
@@ -169,8 +171,8 @@
     }
 
     .option[aria-pressed="true"] .check {
-      background: var(--accent);
-      color: #191b1c;
+      background: var(--blue);
+      color: var(--white);
     }
 
     .option:focus-visible .check {
@@ -216,7 +218,7 @@
       inset: 0 auto 0 0;
       width: 0%;
       border-radius: inherit;
-      background: var(--accent);
+      background: var(--blue);
       transition: width 180ms ease;
     }
 
@@ -230,14 +232,14 @@
       min-height: 48px;
       border: 0;
       border-radius: 12px;
-      background: var(--accent);
-      color: #191b1c;
+      background: var(--blue);
+      color: var(--white);
       font-weight: 700;
       cursor: pointer;
     }
 
     .save:hover {
-      background: var(--accent-dark);
+      background: var(--blue-dark);
     }
 
     .status {
