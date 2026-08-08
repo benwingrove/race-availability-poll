@@ -13,7 +13,7 @@ Open `index.html` in a browser. Without a backend URL, entries are saved only in
 
 ## Make Results Shared
 
-1. Create a new Google Sheet.
+1. Open the Google Sheet created for the poll responses.
 2. In the Sheet, go to `Extensions` > `Apps Script`.
 3. Paste the contents of `google-apps-script.js`.
 4. Click `Deploy` > `New deployment`.
