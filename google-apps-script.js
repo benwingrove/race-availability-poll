@@ -1,3 +1,7 @@
+/**
+ * @OnlyCurrentDoc
+ */
+
 const SHEET_NAME = "Responses";
 
 function doGet(event) {
